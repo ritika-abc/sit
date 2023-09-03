@@ -1,0 +1,776 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+#join-btn {
+    background: linear-gradient(to right, #1daffa, #71dec3);
+    color: white;
+    padding: 9px 19px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: 5s;
+}
+
+#join-btn:hover {
+    background: linear-gradient(to right, #71dec3, #1db0fa71);
+    /* transition: 0.8s; */
+
+
+}
+
+.rocket {
+    margin-top: 12rem;
+}
+
+/* #carousel-text{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+} */
+#btn-1 {
+    border: none;
+    background: linear-gradient(to right, #ff9d08, #ff5b2e);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+
+#carousel-text h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: "arial";
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: animtext 4s steps(80, end);
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+@keyframes animtext {
+    from {
+        width: 0;
+        transition: all 4s ease-in-out;
+    }
+}
+
+#img1 {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce 4s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-68px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#carousel-indicators {
+    left: 0;
+    top: 10%;
+    margin: 0 !important;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 30px;
+
+}
+
+#carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.image img {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: img1 4s linear infinite;
+}
+
+@keyframes img1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-68px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#btn-2 {
+    border: none;
+    background: linear-gradient(to right, #1daffa, #71dec3);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+#enroll {
+    background-image: url(assets/images/banner/1.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#btn-3 {
+    border: 1px solid white;
+    color: white;
+    padding: 15px 30px;
+}
+
+#btn-3:hover {
+    background-color: #1daffa;
+    border: none;
+
+}
+
+.review {
+    background-image: url(assets/images/banner/3.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ==========footer section */
+
+footer {
+    background-image: url(assets/images/banner/footer-bg.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-cont p a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer-cont p {
+    border-bottom: 1px dotted grey;
+}
+
+table tr td {
+    font-size: 0.8rem;
+}
+
+
+/* =====================================about us  */
+
+#about-banner {
+    background-image: url('assets/images/banner/about-banner.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#course-details {
+    background-image: url(assets/images/banner/2.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+/* ======================================contact us */
+
+#contact-banner {
+    background-image: url(assets/images/banner/contact-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#table i {
+    background-color: #029eb7;
+    color: white;
+    font-size: 2rem;
+    padding: 8px;
+
+}
+
+#info-3 a {
+    color: rgba(255, 255, 255, 0.584);
+    padding: 0.3rem;
+}
+
+#info-3 a:hover {
+    color: white;
+    transition: 0.8s;
+}
+
+/* ======================= admission banner */
+
+#admission-banner {
+    background-image: url(assets/images/banner/admission-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ======================= internship banner */
+
+#internship-banner {
+    background-image: url(assets/images/banner/internship-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* #form input{
+    border: none;
+ 
+    outline: none;
+
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    -webkit-box-shadow: unset !important; 
+    box-shadow: none !important;
+}
+#form select{
+    border: none;
+  
+}
+.form-select:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    -webkit-box-shadow: unset !important; 
+    box-shadow: none !important;
+}
+#btn input{
+    border: none;
+    background-color: #1daffa;
+    padding: 8px 35px;
+    color: white;
+}
+#form{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #1db0fa57;
+} */
+
+#form {
+    background-color: #72dfc2;
+    border-radius: 10px;
+}
+
+#form input {
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 1rem;
+    outline: none;
+}
+
+#form select {
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 0.7rem;
+    outline: none;
+}
+
+#form textarea {
+    border: none;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 12px;
+    outline: none;
+}
+
+#formFile {
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+    margin-top: 1rem;
+    outline: none;
+}
+
+#form #formbtn {
+    background: linear-gradient(to right, #08b3ee, #1ddbc3);
+    color: white;
+}
+
+
+/* ==================================== placement section */
+
+#placement-banner {
+    background-image: url(assets/images/banner/placement-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* ==================================== company internship section */
+
+#comapnyIntern-banner {
+    background-image: url(assets/images/banner/company-internship-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ===================================== company placement section */
+
+#companyPlace-banner {
+    background-image: url(assets/images/banner/company-placement-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ===================================== gallery  section */
+
+#gallery-banner {
+    background-image: url(assets/images/banner/gallery-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ===================================== reviews  section */
+
+#review-banner {
+    background-image: url(assets/images/banner/review-banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .rocket {
+        display: none;
+    }
+
+    #carousel-text {
+        margin-top: 30%;
+    }
+
+    #carousel-text h2 {
+        font-size: 1rem;
+
+    }
+
+    .carousel-indicators button {
+        display: none;
+    }
+
+    .site-logo img {
+        width: 140px;
+    }
+
+    footer {
+        background-image: url(assets/images/banner/footer-bg.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    #table {
+        overflow-x: scroll;
+    }
+
+    #admission-banner {
+        height: 60vh;
+    }
+
+    /* ======================= internship banner */
+
+    #internship-banner {
+
+        height: 60vh;
+
+    }
+
+    /* ==================================== placement section */
+
+    #placement-banner {
+        height: 60vh;
+    }
+
+
+    /* ==================================== company internship section */
+
+    #comapnyIntern-banner {
+        height: 60vh;
+    }
+
+    /* ===================================== company placement section */
+
+    #companyPlace-banner {
+        height: 60vh;
+    }
+
+    /* ===================================== gallery  section */
+
+    #gallery-banner {
+        height: 60vh;
+    }
+
+    /* ===================================== reviews  section */
+
+    #review-banner {
+
+        height: 60vh;
+    }
+
+    /* ===================================== contact section */
+
+    #contact-banner {
+        height: 60vh;
+    }
+
+
+}
+
+
+/* preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Oxygen:700&display=swap");
+
+.about {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: all 0.2s ease;
+}
+
+.about .bg_links {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    backdrop-filter: blur(5px);
+    position: absolute;
+}
+
+.about .logo {
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+    background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+    opacity: 0.9;
+    transition: all 1s 0.2s ease;
+    bottom: 0;
+    right: 0;
+}
+
+.about .social {
+    opacity: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about .social .icon {
+    width: 100%;
+    height: 100%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    display: flex;
+    transition: all 0.2s ease, background-color 0.4s ease;
+    opacity: 0;
+    border-radius: 100%;
+}
+
+.about .social.portfolio {
+    transition: all 0.8s ease;
+}
+
+.about .social.portfolio .icon {
+    background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
+}
+
+.about .social.dribbble {
+    transition: all 0.3s ease;
+}
+
+.about .social.dribbble .icon {
+    background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
+}
+
+.about .social.linkedin {
+    transition: all 0.8s ease;
+}
+
+.about .social.linkedin .icon {
+    background-image: url(https://rafaelavlucas.github.io/assets/codepen/linkedin.svg);
+}
+
+.about:hover {
+    width: 105px;
+    height: 105px;
+    transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .logo {
+    opacity: 1;
+    transition: all 0.6s ease;
+}
+
+.about:hover .social {
+    opacity: 1;
+}
+
+.about:hover .social .icon {
+    opacity: 0.9;
+}
+
+.about:hover .social:hover {
+    background-size: 28px;
+}
+
+.about:hover .social:hover .icon {
+    background-size: 65%;
+    opacity: 1;
+}
+
+.about:hover .social.portfolio {
+    right: 0;
+    bottom: calc(100% - 40px);
+    transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .social.portfolio .icon:hover {
+    background-color: #698fb7;
+}
+
+.about:hover .social.dribbble {
+    bottom: 45%;
+    right: 45%;
+    transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .social.dribbble .icon:hover {
+    background-color: #ea4c89;
+}
+
+.about:hover .social.linkedin {
+    bottom: 0;
+    right: calc(100% - 40px);
+    transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .social.linkedin .icon:hover {
+    background-color: #0077b5;
+}
+
+body {
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-color: #171f30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .loading {
+    width: 80px;
+    height: 50px;
+    position: relative;
+}
+
+.content .loading p {
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: #5389a6;
+    font-family: "Oxygen", sans-serif;
+    animation: text 3.5s ease both infinite;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@keyframes text {
+    0% {
+        letter-spacing: 1px;
+        transform: translateX(0px);
+    }
+
+    40% {
+        letter-spacing: 2px;
+        transform: translateX(26px);
+    }
+
+    80% {
+        letter-spacing: 1px;
+        transform: translateX(32px);
+    }
+
+    90% {
+        letter-spacing: 2px;
+        transform: translateX(0px);
+    }
+
+    100% {
+        letter-spacing: 1px;
+        transform: translateX(0px);
+    }
+}
+
+.content .loading span {
+    background-color: #5389a6;
+    border-radius: 50px;
+    display: block;
+    height: 16px;
+    width: 16px;
+    bottom: 0;
+    position: absolute;
+    transform: translateX(64px);
+    animation: loading 3.5s ease both infinite;
+}
+
+.content .loading span:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #a6dcee;
+    border-radius: inherit;
+    animation: loading2 3.5s ease both infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 16px;
+        transform: translateX(0px);
+    }
+
+    40% {
+        width: 100%;
+        transform: translateX(0px);
+    }
+
+    80% {
+        width: 16px;
+        transform: translateX(64px);
+    }
+
+    90% {
+        width: 100%;
+        transform: translateX(0px);
+    }
+
+    100% {
+        width: 16px;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes loading2 {
+    0% {
+        transform: translateX(0px);
+        width: 16px;
+    }
+
+    40% {
+        transform: translateX(0%);
+        width: 80%;
+    }
+
+    80% {
+        width: 100%;
+        transform: translateX(0px);
+    }
+
+    90% {
+        width: 80%;
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        width: 16px;
+    }
+}

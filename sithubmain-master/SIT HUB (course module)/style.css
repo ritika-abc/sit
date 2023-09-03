@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    background-image: url(assets/images/banner/sd-1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105vh;
+}
+
+#normal ul li a:hover {
+    background: linear-gradient(to right, #08b3ee, #1ddbc3);
+    color: white;
+    border-radius: 3px;
+}
+
+#form {
+    background-color: rgba(255, 255, 255, 0.296);
+    border-radius: 10px;
+}
+
+#form input {
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 1rem;
+    outline: none;
+}
+
+#form textarea {
+    border: none;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 12px;
+    outline: none;
+}
+
+#form #formbtn {
+    background: linear-gradient(to right, #08b3ee, #1ddbc3);
+    color: white;
+}
+
+#navbar {
+    display: none;
+}
+
+#module {
+    background-image: url(assets/images/banner/wave.svg);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.nav-pills-custom .nav-link {
+    color: #aaa;
+    background: #fff;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #0c67a0;
+    background: #fff;
+}
+
+#btn:focus {
+    outline: none;
+    box-shadow: none;
+
+}
+
+#btn:focus {
+    background-color: #0c67a0;
+    color: white;
+}
+
+#duration-btn {
+    background: linear-gradient(to right, #08b3ee, #1ddbc3);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+}
+
+#chart #img-2 {
+    animation: ani 20s linear infinite;
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.custom-shape-divider-bottom-1657011339 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1657011339 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 198px;
+}
+
+.custom-shape-divider-bottom-1657011339 .shape-fill {
+    fill: #0C67A0;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #0a578b, #0e6ca9);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: 0.8s;
+    z-index: 1000;
+
+}
+
+
+/* =================stats css */
+
+/* #prg-counter .prg-container {
+    text-align: center;
+    margin: auto;
+}
+
+#prg-head h1 {
+    text-align: center;
+}
+
+#prg-counter h3.prg-count {
+    background-color: rgba(0, 0, 0, 0);
+    color: blue;
+    font-size: 2.5em;
+    padding: 20px 20px 6px 20px;
+    border: 0px solid black;
+} */
+
+#prg-counter h3.prg-count::after {
+    content: " +";
+    display: inline-block;
+}
+
+/*#prg-counter h3.prg-count {
+    border: 5px solid blue;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }*/
+
+
+
+#prg-counter h4.prg-count-title {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(120, 120, 120, 1);
+    font-size: 1.6em;
+}
+
+.last-bottom {
+    background: linear-gradient(to right, #22a6e7, #0681d7);
+}
+
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 1000;
+    border: none;
+    background: none;
+}
+
+
+
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+    #normal {
+        display: none;
+    }
+
+    #navbar {
+        display: block;
+    }
+
+    #fly-left {
+        display: none;
+    }
+
+    #fly-right {
+        display: none;
+    }
+    #svg2{
+        width: 100%;
+    }
+    #svg3{
+        width: 100%;
+    }
+}
+@media screen and (min-hei: 1200px) {
+    #banner{
+        height: auto;
+    }
+    
+}
+
+
+
+
+
+
